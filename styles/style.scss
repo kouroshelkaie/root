@@ -16,7 +16,7 @@ html {
 //   Assets
   $blue:#377ef9;
   $gray:#646464;
-  
+
 //================
 // fonts
 @font-face {
@@ -35,4 +35,42 @@ html {
     font-family: 'rezvan2';
     src: url("../fonts/Rezvan-reg.ttf");
 }
+
 // ==============
+
+// modifiers
+.inner_container{
+    width: 85%;
+    margin: 0 auto;   
+    max-width: 2000px;
+}
+
+// header section
+.header{
+  font-family: 'iransans';
+  .header_contact{
+    padding: .7em 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:.2px solid #e6e6e6;
+      .header_contact_items{
+        #header_mail{font-family:'Roboto';font-size: .9em;}
+        i{
+          font-size: .9em;
+          color: $blue;
+          padding: 0 .5em;
+          font-weight: 500;
+        }
+        span{
+          color: $gray;
+        }
+      }
+      .socialmedias{
+        .socialitems:hover{color: $blue;}
+        a>i{
+          color: $gray;
+          transition: all .2s ease;
+        }
+      }
+  }
+}

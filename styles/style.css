@@ -36,4 +36,51 @@ html {
   font-family: 'rezvan2';
   src: url("../fonts/Rezvan-reg.ttf");
 }
+
+.inner_container {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+.header {
+  font-family: 'iransans';
+}
+
+.header .header_contact {
+  padding: .7em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: .2px solid #e6e6e6;
+}
+
+.header .header_contact .header_contact_items #header_mail {
+  font-family: 'Roboto';
+  font-size: .9em;
+}
+
+.header .header_contact .header_contact_items i {
+  font-size: .9em;
+  color: #377ef9;
+  padding: 0 .5em;
+  font-weight: 500;
+}
+
+.header .header_contact .header_contact_items span {
+  color: #646464;
+}
+
+.header .header_contact .socialmedias .socialitems:hover {
+  color: #377ef9;
+}
+
+.header .header_contact .socialmedias a > i {
+  color: #646464;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
 /*# sourceMappingURL=style.css.map */
