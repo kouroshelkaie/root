@@ -1,0 +1,39 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'iransans';
+  src: url("../fonts/iransans.ttf");
+}
+
+@font-face {
+  font-family: 'iransans2';
+  src: url("../fonts/iransans2.ttf");
+}
+
+@font-face {
+  font-family: 'rezvan';
+  src: url("../fonts/Rezvan.ttf");
+}
+
+@font-face {
+  font-family: 'rezvan2';
+  src: url("../fonts/Rezvan-reg.ttf");
+}
+/*# sourceMappingURL=style.css.map */
