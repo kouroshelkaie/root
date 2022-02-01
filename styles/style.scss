@@ -81,7 +81,7 @@ html {
   .header_navigation{
     display: flex;
     justify-content: space-between;
-    padding: .5em;
+    padding: .8em;
       .header_logo{
         img{
           width: 3em;
@@ -118,5 +118,14 @@ html {
         transition: all .3s ease-in-out;
       }.instagram:hover{background-color: #396cf0;
       }
+  }
+}
+
+
+// main section
+.main_container{
+  .main-carousel{
+    .carousel-cell{
+    }
   }
 }
