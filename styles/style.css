@@ -44,6 +44,10 @@ html {
 }
 
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  background-color: #fff;
   font-family: 'iransans';
 }
 
@@ -82,5 +86,59 @@ html {
   color: #646464;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.header .header_navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5em;
+}
+
+.header .header_navigation .header_logo img {
+  width: 3em;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu {
+  list-style-type: none;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item {
+  display: inline-block;
+  margin: 0 1.5em;
+  font-size: 1.2em;
+  padding-top: .4em;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  border-bottom: 1px solid #377ef9 visible;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item > a:hover {
+  color: #377ef9;
+  border-bottom: 2px solid #377ef9;
+}
+
+.header .header_navigation .instagram {
+  cursor: pointer;
+  background-color: #377ef9;
+  padding: 1em 3em;
+  border-radius: 2px;
+  font-family: 'Raleway';
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.header .header_navigation .instagram:hover {
+  background-color: #396cf0;
 }
 /*# sourceMappingURL=style.css.map */

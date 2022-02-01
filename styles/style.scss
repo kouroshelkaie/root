@@ -47,6 +47,9 @@ html {
 
 // header section
 .header{
+  position: sticky;
+  top: 0%;
+  background-color: #fff;
   font-family: 'iransans';
   .header_contact{
     padding: .7em 0;
@@ -71,6 +74,49 @@ html {
           color: $gray;
           transition: all .2s ease;
         }
+      }
+  }
+
+
+  .header_navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+      .header_logo{
+        img{
+          width: 3em;
+        }
+      }
+      .header_navbar{
+        .header_navigation_menu{
+          list-style-type: none;
+            .header_navigation_item{
+              display: inline-block;
+              margin: 0 1.5em;
+              font-size: 1.2em;
+              padding-top: .4em;
+                a{
+                  color: #333;
+                  text-decoration: none;
+                  transition: all .2s ease;
+                  border-bottom: 1px solid $blue visible;
+                }
+          }.header_navigation_item>a:hover{
+            color:$blue;
+            border-bottom: 2px solid $blue;
+          }
+        }
+      }
+      .instagram{
+        cursor: pointer;
+        background-color: $blue;
+        padding: 1em 3em;
+        border-radius: 2px;
+        font-family: 'Raleway';
+        font-weight: bold;           
+        color: #fff;
+        transition: all .3s ease-in-out;
+      }.instagram:hover{background-color: #396cf0;
       }
   }
 }
