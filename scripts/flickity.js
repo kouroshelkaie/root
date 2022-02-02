@@ -7,6 +7,8 @@ var flkty = new Flickity( elem, {
   accessibility: true,
   resize: true,
   setGallerySize: true,
+  draggable: true,
+  wrapAround: true,
 });
 
 var flkty = new Flickity( '.main-carousel', {

@@ -175,4 +175,40 @@ html {
 .main-carousel .carousel-cell img {
   width: 100%;
 }
+
+.top_portfolio_container {
+  text-align: center;
+  font-family: 'iransans';
+  margin-top: 8em;
+}
+
+.top_portfolio_container h3 {
+  color: #377ef9;
+}
+
+.top_portfolio_container h5 {
+  color: #333;
+  border-bottom: 1px solid #377ef9;
+  display: inline-block;
+  padding: .5em;
+}
+
+.top_portfolio_container .card_container {
+  margin: 3em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top_portfolio_container .card_container .card {
+  border: 1px solid #e6e6e6;
+}
+
+.top_portfolio_container a {
+  text-decoration: none;
+  color: #333;
+}
 /*# sourceMappingURL=style.css.map */

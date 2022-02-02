@@ -155,3 +155,28 @@ html {
   }
 }
 
+// top portfolio cards section
+.top_portfolio_container{
+  text-align: center;
+  font-family: 'iransans';
+  margin-top: 8em;
+  h3{color: $blue;}
+  h5{
+    color: #333;
+    border-bottom: 1px solid $blue;
+    display: inline-block;
+    padding: .5em;
+  }
+  .card_container{
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+    .card{
+      border: 1px solid #e6e6e6;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+}
