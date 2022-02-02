@@ -40,15 +40,13 @@ html {
 
 // modifiers
 .inner_container{
-    width: 85%;
+    width: 95%;
     margin: 0 auto;   
     max-width: 2000px;
 }
 
 // header section
 .header{
-  position: sticky;
-  top: 0%;
   background-color: #fff;
   font-family: 'iransans';
   .header_contact{
@@ -81,20 +79,41 @@ html {
   .header_navigation{
     display: flex;
     justify-content: space-between;
-    padding: .8em;
+    padding: .8em 1em;
       .header_logo{
         img{
-          width: 3em;
+          width: 3.5em;
         }
       }
       .header_navbar{
         .header_navigation_menu{
           list-style-type: none;
+          #opendp{
+            position: relative;
+          }
+            .dropdown_container{
+              background-color: #fff;
+              padding: 1em;
+              position: absolute;
+              z-index: 2;
+              list-style-type: none;
+              display: none;
+              white-space: nowrap;
+              border-radius: 3px;
+              .dropdown_item{
+                color: #333;
+                transition: all .3s ease-in;
+                margin: .5em 0;
+              }
+            }.dropdown_item a:hover{
+              color: $blue;
+              border-bottom: 1px solid $blue;
+            }
             .header_navigation_item{
               display: inline-block;
               margin: 0 1.5em;
               font-size: 1.2em;
-              padding-top: .4em;
+              padding-top: .5em;
                 a{
                   color: #333;
                   text-decoration: none;
@@ -106,13 +125,18 @@ html {
             border-bottom: 2px solid $blue;
           }
         }
+        #opendp:hover .dropdown_container {
+          display: block;
+        }
       }
       .instagram{
+        margin-top:.5em;
+        font-size: .8em;
         cursor: pointer;
         background-color: $blue;
-        padding: 1em 3em;
+        padding: .9em 1.4em;
         border-radius: 2px;
-        font-family: 'Raleway';
+        font-family: 'Roboto';
         font-weight: bold;           
         color: #fff;
         transition: all .3s ease-in-out;
@@ -123,9 +147,11 @@ html {
 
 
 // main section
-.main_container{
-  .main-carousel{
-    .carousel-cell{
+.main-carousel{
+  .carousel-cell{
+    img{
+      width: 100%;
     }
   }
 }
+

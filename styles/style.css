@@ -38,15 +38,12 @@ html {
 }
 
 .inner_container {
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
   max-width: 2000px;
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0%;
   background-color: #fff;
   font-family: 'iransans';
 }
@@ -95,22 +92,49 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .8em;
+  padding: .8em 1em;
 }
 
 .header .header_navigation .header_logo img {
-  width: 3em;
+  width: 3.5em;
 }
 
 .header .header_navigation .header_navbar .header_navigation_menu {
   list-style-type: none;
 }
 
+.header .header_navigation .header_navbar .header_navigation_menu #opendp {
+  position: relative;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .dropdown_container {
+  background-color: #fff;
+  padding: 1em;
+  position: absolute;
+  z-index: 2;
+  list-style-type: none;
+  display: none;
+  white-space: nowrap;
+  border-radius: 3px;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .dropdown_container .dropdown_item {
+  color: #333;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  margin: .5em 0;
+}
+
+.header .header_navigation .header_navbar .header_navigation_menu .dropdown_item a:hover {
+  color: #377ef9;
+  border-bottom: 1px solid #377ef9;
+}
+
 .header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item {
   display: inline-block;
   margin: 0 1.5em;
   font-size: 1.2em;
-  padding-top: .4em;
+  padding-top: .5em;
 }
 
 .header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item a {
@@ -126,12 +150,18 @@ html {
   border-bottom: 2px solid #377ef9;
 }
 
+.header .header_navigation .header_navbar #opendp:hover .dropdown_container {
+  display: block;
+}
+
 .header .header_navigation .instagram {
+  margin-top: .5em;
+  font-size: .8em;
   cursor: pointer;
   background-color: #377ef9;
-  padding: 1em 3em;
+  padding: .9em 1.4em;
   border-radius: 2px;
-  font-family: 'Raleway';
+  font-family: 'Roboto';
   font-weight: bold;
   color: #fff;
   -webkit-transition: all .3s ease-in-out;
@@ -140,5 +170,9 @@ html {
 
 .header .header_navigation .instagram:hover {
   background-color: #396cf0;
+}
+
+.main-carousel .carousel-cell img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ var flkty = new Flickity( elem, {
   // options
   cellAlign: 'left',
   contain: true,
-  autoPlay: 4000,
+  autoPlay: 5000,
   accessibility: true,
   resize: true,
   setGallerySize: true,
