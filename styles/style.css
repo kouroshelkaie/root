@@ -18,22 +18,22 @@ html {
 }
 
 @font-face {
-  font-family: 'iransans';
+  font-family: "iransans";
   src: url("../fonts/iransans.ttf");
 }
 
 @font-face {
-  font-family: 'iransans2';
+  font-family: "iransans2";
   src: url("../fonts/iransans2.ttf");
 }
 
 @font-face {
-  font-family: 'rezvan';
+  font-family: "rezvan";
   src: url("../fonts/Rezvan.ttf");
 }
 
 @font-face {
-  font-family: 'rezvan2';
+  font-family: "rezvan2";
   src: url("../fonts/Rezvan-reg.ttf");
 }
 
@@ -45,29 +45,29 @@ html {
 
 .header {
   background-color: #fff;
-  font-family: 'iransans';
+  font-family: "iransans";
 }
 
 .header .header_contact {
-  padding: .7em 0;
+  padding: 0.7em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: .2px solid #e6e6e6;
+  border-bottom: 0.2px solid #e6e6e6;
 }
 
 .header .header_contact .header_contact_items #header_mail {
-  font-family: 'Roboto';
-  font-size: .9em;
+  font-family: "Roboto";
+  font-size: 0.9em;
 }
 
 .header .header_contact .header_contact_items i {
-  font-size: .9em;
+  font-size: 0.9em;
   color: #377ef9;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   font-weight: 500;
 }
 
@@ -81,8 +81,8 @@ html {
 
 .header .header_contact .socialmedias a > i {
   color: #646464;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .header .header_navigation {
@@ -92,7 +92,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
 }
 
 .header .header_navigation .header_logo img {
@@ -120,9 +120,9 @@ html {
 
 .header .header_navigation .header_navbar .header_navigation_menu .dropdown_container .dropdown_item {
   color: #333;
-  -webkit-transition: all .3s ease-in;
-  transition: all .3s ease-in;
-  margin: .5em 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  margin: 0.5em 0;
 }
 
 .header .header_navigation .header_navbar .header_navigation_menu .dropdown_item a:hover {
@@ -134,14 +134,14 @@ html {
   display: inline-block;
   margin: 0 1.5em;
   font-size: 1.2em;
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 .header .header_navigation .header_navbar .header_navigation_menu .header_navigation_item a {
   color: #333;
   text-decoration: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   border-bottom: 1px solid #377ef9 visible;
 }
 
@@ -155,17 +155,17 @@ html {
 }
 
 .header .header_navigation .instagram {
-  margin-top: .5em;
-  font-size: .8em;
+  margin-top: 0.5em;
+  font-size: 0.8em;
   cursor: pointer;
   background-color: #377ef9;
-  padding: .9em 1.4em;
+  padding: 0.9em 1.4em;
   border-radius: 2px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: bold;
   color: #fff;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header .header_navigation .instagram:hover {
@@ -177,20 +177,22 @@ html {
 }
 
 .top_portfolio_container {
+  background-color: #fcfafa;
   text-align: center;
-  font-family: 'iransans';
-  margin-top: 8em;
+  font-family: "iransans";
+  margin-top: 3em;
+  padding-top: 1em;
 }
 
-.top_portfolio_container h3 {
+.top_portfolio_container .top_portfolio_title {
   color: #377ef9;
 }
 
-.top_portfolio_container h5 {
+.top_portfolio_container .top_portfolio_caption {
   color: #333;
   border-bottom: 1px solid #377ef9;
   display: inline-block;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .top_portfolio_container .card_container {
@@ -204,11 +206,87 @@ html {
 }
 
 .top_portfolio_container .card_container .card {
+  cursor: pointer;
   border: 1px solid #e6e6e6;
+  width: 23%;
+  border-radius: 4px;
+  margin: 0 2em;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.top_portfolio_container .card_container .card img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.top_portfolio_container .card_container .card .card_details {
+  text-align: right;
+  position: relative;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_time {
+  padding: 0.3em;
+  background-color: #377ef9;
+  width: 60%;
+  position: absolute;
+  top: -10%;
+  right: 4%;
+  border-radius: 4px;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_time .time_logo {
+  color: #fff;
+  margin: 0 .5em;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_time .time_portfolio {
+  color: #fff;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_define {
+  padding: 4em 2em 2em;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_define .card_caption {
+  color: #646464;
+  margin: .5em 0;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_define .card_title {
+  color: #333;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.top_portfolio_container .card_container .card .card_details .card_define .card_title:hover {
+  color: #377ef9;
+}
+
+.top_portfolio_container .card_container .card .card_details .more_link {
+  color: #377ef9;
+  display: block;
+  margin-top: 1em;
+}
+
+.top_portfolio_container .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .top_portfolio_container a {
   text-decoration: none;
   color: #333;
+}
+
+.top_portfolio_container .more_top_portfolio {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.top_portfolio_container .more_top_portfolio:hover {
+  color: #377ef9;
 }
 /*# sourceMappingURL=style.css.map */

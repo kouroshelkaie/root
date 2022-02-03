@@ -1,182 +1,249 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:after,
-  *:before {
-    box-sizing: inherit;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    scroll-behavior: smooth;
-  }
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  scroll-behavior: smooth;
+}
 
 //   Assets
-  $blue:#377ef9;
-  $gray:#646464;
+$blue: #377ef9;
+$gray: #646464;
 
 //================
 // fonts
 @font-face {
-    font-family: 'iransans';
-    src: url("../fonts/iransans.ttf")
+  font-family: "iransans";
+  src: url("../fonts/iransans.ttf");
 }
 @font-face {
-    font-family: 'iransans2';
-    src: url("../fonts/iransans2.ttf");
+  font-family: "iransans2";
+  src: url("../fonts/iransans2.ttf");
 }
 @font-face {
-    font-family: 'rezvan';
-    src: url("../fonts/Rezvan.ttf");
+  font-family: "rezvan";
+  src: url("../fonts/Rezvan.ttf");
 }
 @font-face {
-    font-family: 'rezvan2';
-    src: url("../fonts/Rezvan-reg.ttf");
+  font-family: "rezvan2";
+  src: url("../fonts/Rezvan-reg.ttf");
 }
 
 // ==============
 
 // modifiers
-.inner_container{
-    width: 95%;
-    margin: 0 auto;   
-    max-width: 2000px;
+.inner_container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 2000px;
 }
 
 // header section
-.header{
+.header {
   background-color: #fff;
-  font-family: 'iransans';
-  .header_contact{
-    padding: .7em 0;
+  font-family: "iransans";
+  .header_contact {
+    padding: 0.7em 0;
     display: flex;
     justify-content: space-between;
-    border-bottom:.2px solid #e6e6e6;
-      .header_contact_items{
-        #header_mail{font-family:'Roboto';font-size: .9em;}
-        i{
-          font-size: .9em;
-          color: $blue;
-          padding: 0 .5em;
-          font-weight: 500;
-        }
-        span{
-          color: $gray;
-        }
+    border-bottom: 0.2px solid #e6e6e6;
+    .header_contact_items {
+      #header_mail {
+        font-family: "Roboto";
+        font-size: 0.9em;
       }
-      .socialmedias{
-        .socialitems:hover{color: $blue;}
-        a>i{
-          color: $gray;
-          transition: all .2s ease;
-        }
+      i {
+        font-size: 0.9em;
+        color: $blue;
+        padding: 0 0.5em;
+        font-weight: 500;
       }
+      span {
+        color: $gray;
+      }
+    }
+    .socialmedias {
+      .socialitems:hover {
+        color: $blue;
+      }
+      a > i {
+        color: $gray;
+        transition: all 0.2s ease;
+      }
+    }
   }
 
-
-  .header_navigation{
+  .header_navigation {
     display: flex;
     justify-content: space-between;
-    padding: .8em 1em;
-      .header_logo{
-        img{
-          width: 3.5em;
-        }
+    padding: 0.8em 1em;
+    .header_logo {
+      img {
+        width: 3.5em;
       }
-      .header_navbar{
-        .header_navigation_menu{
+    }
+    .header_navbar {
+      .header_navigation_menu {
+        list-style-type: none;
+        #opendp {
+          position: relative;
+        }
+        .dropdown_container {
+          background-color: #fff;
+          padding: 1em;
+          position: absolute;
+          z-index: 2;
           list-style-type: none;
-          #opendp{
-            position: relative;
-          }
-            .dropdown_container{
-              background-color: #fff;
-              padding: 1em;
-              position: absolute;
-              z-index: 2;
-              list-style-type: none;
-              display: none;
-              white-space: nowrap;
-              border-radius: 3px;
-              .dropdown_item{
-                color: #333;
-                transition: all .3s ease-in;
-                margin: .5em 0;
-              }
-            }.dropdown_item a:hover{
-              color: $blue;
-              border-bottom: 1px solid $blue;
-            }
-            .header_navigation_item{
-              display: inline-block;
-              margin: 0 1.5em;
-              font-size: 1.2em;
-              padding-top: .5em;
-                a{
-                  color: #333;
-                  text-decoration: none;
-                  transition: all .2s ease;
-                  border-bottom: 1px solid $blue visible;
-                }
-          }.header_navigation_item>a:hover{
-            color:$blue;
-            border-bottom: 2px solid $blue;
+          display: none;
+          white-space: nowrap;
+          border-radius: 3px;
+          .dropdown_item {
+            color: #333;
+            transition: all 0.3s ease-in;
+            margin: 0.5em 0;
           }
         }
-        #opendp:hover .dropdown_container {
-          display: block;
+        .dropdown_item a:hover {
+          color: $blue;
+          border-bottom: 1px solid $blue;
+        }
+        .header_navigation_item {
+          display: inline-block;
+          margin: 0 1.5em;
+          font-size: 1.2em;
+          padding-top: 0.5em;
+          a {
+            color: #333;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            border-bottom: 1px solid $blue visible;
+          }
+        }
+        .header_navigation_item > a:hover {
+          color: $blue;
+          border-bottom: 2px solid $blue;
         }
       }
-      .instagram{
-        margin-top:.5em;
-        font-size: .8em;
-        cursor: pointer;
-        background-color: $blue;
-        padding: .9em 1.4em;
-        border-radius: 2px;
-        font-family: 'Roboto';
-        font-weight: bold;           
-        color: #fff;
-        transition: all .3s ease-in-out;
-      }.instagram:hover{background-color: #396cf0;
+      #opendp:hover .dropdown_container {
+        display: block;
       }
+    }
+    .instagram {
+      margin-top: 0.5em;
+      font-size: 0.8em;
+      cursor: pointer;
+      background-color: $blue;
+      padding: 0.9em 1.4em;
+      border-radius: 2px;
+      font-family: "Roboto";
+      font-weight: bold;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+    .instagram:hover {
+      background-color: #396cf0;
+    }
   }
 }
 
-
 // main section
-.main-carousel{
-  .carousel-cell{
-    img{
+.main-carousel {
+  .carousel-cell {
+    img {
       width: 100%;
     }
   }
 }
 
 // top portfolio cards section
-.top_portfolio_container{
+.top_portfolio_container {
+  background-color: #fcfafa;
   text-align: center;
-  font-family: 'iransans';
-  margin-top: 8em;
-  h3{color: $blue;}
-  h5{
+  font-family: "iransans";
+  margin-top: 3em;
+  padding-top: 1em;
+  .top_portfolio_title {
+    color: $blue;
+  }
+  .top_portfolio_caption {
     color: #333;
     border-bottom: 1px solid $blue;
     display: inline-block;
-    padding: .5em;
+    padding: 0.5em;
   }
-  .card_container{
+  .card_container {
     margin: 3em 0;
     display: flex;
     justify-content: center;
-    .card{
+    .card {
+      cursor: pointer;
       border: 1px solid #e6e6e6;
+      width: 23%;
+      border-radius: 4px;
+      margin: 0 2em;
+      background-color: #fff;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: 4px 4px 0px 0px;
+        transition: all .3s ease-in-out;
+      }
+      .card_details {
+        text-align: right;
+        position: relative;
+        .card_time {
+          padding: 0.3em;
+          background-color: $blue;
+          width: 60%;
+          position: absolute;
+          top: -10%;
+          right: 4%;
+          border-radius: 4px;
+          .time_logo {
+            color: #fff;
+            margin: 0 .5em;
+          }
+          .time_portfolio {
+            color: #fff;
+          }
+        }
+        .card_define{
+          padding: 4em 2em 2em;
+          .card_caption {
+            color: $gray;
+            margin: .5em 0;
+          }
+          .card_title{
+            color: #333;
+            transition: all .2s linear;
+          }.card_title:hover{color: $blue;}
+        }
+        .more_link {
+          color: $blue;
+          display: block;
+          margin-top: 1em;
+        } 
+      }
     }
   }
-  a{
+  .card:hover img{
+    transform: scale(1.1);
+  }
+  a {
     text-decoration: none;
     color: #333;
+  }
+  .more_top_portfolio {
+    transition: all 0.3s ease;
+  }
+  .more_top_portfolio:hover {
+    color: $blue;
   }
 }
