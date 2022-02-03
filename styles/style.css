@@ -182,6 +182,7 @@ html {
   font-family: "iransans";
   margin-top: 3em;
   padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 .top_portfolio_container .top_portfolio_title {
@@ -197,6 +198,7 @@ html {
 
 .top_portfolio_container .card_container {
   margin: 3em 0;
+  margin: 3em 0 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,12 +283,46 @@ html {
   color: #333;
 }
 
-.top_portfolio_container .more_top_portfolio {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.top_services_container {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  padding: 2em 0;
+  font-family: 'iransans';
+  color: #377ef9;
+  text-align: center;
 }
 
-.top_portfolio_container .more_top_portfolio:hover {
+.top_services_container .top_services_navigation {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.top_services_container .top_services_navigation .top_services_items {
+  text-decoration: none;
   color: #377ef9;
+}
+
+.top_services_container .top_services_navigation .top_services_items i {
+  font-size: 1.5em;
+  font-weight: lighter;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.top_services_container .top_services_navigation .top_services_items i:hover {
+  font-weight: bold;
+}
+
+.top_services_container .top_services_navigation .top_services_items p {
+  color: #333;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=style.css.map */

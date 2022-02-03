@@ -169,6 +169,7 @@ $gray: #646464;
   font-family: "iransans";
   margin-top: 3em;
   padding-top: 1em;
+  padding-bottom: 2em;
   .top_portfolio_title {
     color: $blue;
   }
@@ -180,6 +181,7 @@ $gray: #646464;
   }
   .card_container {
     margin: 3em 0;
+    margin: 3em 0 2em;
     display: flex;
     justify-content: center;
     .card {
@@ -240,10 +242,37 @@ $gray: #646464;
     text-decoration: none;
     color: #333;
   }
-  .more_top_portfolio {
-    transition: all 0.3s ease;
-  }
-  .more_top_portfolio:hover {
-    color: $blue;
-  }
 }
+
+// top services section
+.top_services_container{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  padding: 2em 0;
+  font-family: 'iransans';
+  color: $blue;
+  text-align: center;
+    .top_services_navigation{
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .top_services_items{
+        text-decoration: none;
+        i{
+          font-size: 1.5em;
+          font-weight: lighter;
+          transition: all .2s ease;
+        } i:hover{font-weight: bold;}
+        p{color: #333;
+          font-weight: lighter;
+        }
+        color: $blue;
+      }
+    }
+}
+
+
+// banner section
