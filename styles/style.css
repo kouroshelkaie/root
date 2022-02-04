@@ -359,10 +359,17 @@ html {
   color: #fff;
   font-family: 'iransans2';
   padding: 1.1em 3em;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+  cursor: pointer;
 }
 
 .present_container .present_data a .present_button i {
   font-size: .8em;
+}
+
+.present_container .present_data .present_button:hover {
+  background-color: #396cf0;
 }
 
 .top_blog_container {
@@ -426,5 +433,30 @@ html {
 
 .blog_item:hover .blog_title {
   color: #377ef9;
+}
+
+.brand_container {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding: 1em;
+}
+
+#typed {
+  margin-top: 2em;
+  font-size: 2em;
+  font-family: 'raleway';
+  font-weight: bolder;
+  color: #377ef9;
+}
+
+.typed-cursor {
+  color: #646464;
+  font-size: 1.5em;
+}
+
+.map {
+  width: 100%;
+  margin-top: 4em;
 }
 /*# sourceMappingURL=style.css.map */

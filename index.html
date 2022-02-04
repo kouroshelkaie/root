@@ -25,6 +25,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"defer></script>
     <script src="scripts/main.js"defer></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="scripts/particles.js" defer></script>
+    <script src="scripts/app.js" defer></script>
     <title>هوشمند سازان چالوس</title>
 </head>
 <body>
@@ -180,13 +182,13 @@
         <!-- present section -->
         <main class="present_container">
             <div class="present_data">
-                <h1 class="present_title">دی-ویژن <br> همه چیز تحت کنترل شماست!</h2>
-                <p class="present_define">
+                <h1 class="present_title" data-aos="fade-right" data-aos-duration="2000">دی-ویژن <br> همه چیز تحت کنترل شماست!</h2>
+                <p class="present_define" data-aos="fade-right" data-aos-duration="3000">
                     ما در گروه فنی و مهندسی هوشمند سازان چالوس فعالیت خودمون را از سال 92 با ارائه ی هوشمند سازی منازل و خدمات مربوط به اون شروع کردیم
                     اما با گذشت زمان گسترش فعالیتهامون را در دیگر زمینه های اجرای دوربین های مدار بسته، انواع سیستم های امنیتی، دربهای خودکار و... ادامه دادیم.حالا مفتخریم بعد از گذشت 7 سال همراهی با شما در تیم هوشمندسازان
                     روز به روز کیفیت فعالیتمون و دامنه ی خدمت رسانیمون در تمامی شهرهای استان مازندران  گسترش بدیم
                 </p>
-                <a href="#"><button class="present_button"> سرویسها <i class="fas fa-chevron-left"></i></button></a>
+                <a href="#" data-aos="fade-right" data-aos-duration="2000"><button class="present_button" > سرویسها <i class="fas fa-chevron-left"></i></button></a>
             </div>
         </main>
 
@@ -226,6 +228,25 @@
                 </a>
             </div>
         </section>
+
+        <!-- brands section -->
+        <section class="brand_container" id="particles-js">
+            <div id="typed-strings">
+                <p>D-Link</p>
+                <p>Dahua</p>
+                <p>Mikrotik</p>
+                <p>HD-Vision</p>
+                <p>Bosch</p>
+                <p>Zimens</p>
+                <p>Briton</p>
+                <p>Classic</p>
+                <p>Toniv</p>
+              </div>
+              <span id="typed"></span>
+        </section>
+
+        <!-- location map section -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25606.110767655508!2d51.405093570635856!3d36.65613144694773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8ea6906ee0aced%3A0xfe4a6e2f842f2e72!2sChalus%2C%20Mazandaran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1643979203205!5m2!1sen!2s" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
     </div>
 </body>
 </html>
