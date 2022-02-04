@@ -164,7 +164,7 @@ $gray: #646464;
 
 // top portfolio cards section
 .top_portfolio_container {
-  background-color: #fcfafa;
+  background-color: #fff;
   text-align: center;
   font-family: "iransans";
   margin-top: 3em;
@@ -195,7 +195,7 @@ $gray: #646464;
       img {
         width: 100%;
         border-radius: 4px 4px 0px 0px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
       }
       .card_details {
         text-align: right;
@@ -210,32 +210,35 @@ $gray: #646464;
           border-radius: 4px;
           .time_logo {
             color: #fff;
-            margin: 0 .5em;
+            margin: 0 0.5em;
           }
           .time_portfolio {
             color: #fff;
           }
         }
-        .card_define{
+        .card_define {
           padding: 4em 2em 2em;
           .card_caption {
             color: $gray;
-            margin: .5em 0;
+            margin: 0.5em 0;
           }
-          .card_title{
+          .card_title {
             color: #333;
-            transition: all .2s linear;
-          }.card_title:hover{color: $blue;}
+            transition: all 0.2s linear;
+          }
+          .card_title:hover {
+            color: $blue;
+          }
         }
         .more_link {
           color: $blue;
           display: block;
           margin-top: 1em;
-        } 
+        }
       }
     }
   }
-  .card:hover img{
+  .card:hover img {
     transform: scale(1.1);
   }
   a {
@@ -245,34 +248,71 @@ $gray: #646464;
 }
 
 // top services section
-.top_services_container{
+.top_services_container {
+  background-color: #faf9f9;
   background-size: 100%;
   background-repeat: no-repeat;
   border-top: 1px solid #e6e6e6;
-  border-top: 1px solid #e6e6e6;
-  padding: 2em 0;
-  font-family: 'iransans';
+  border-bottom: 1px solid #e6e6e6;
+  padding: 3em 0;
+  font-family: "iransans";
   color: $blue;
   text-align: center;
-    .top_services_navigation{
-      text-align: center;
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
-      .top_services_items{
-        text-decoration: none;
-        i{
-          font-size: 1.5em;
-          font-weight: lighter;
-          transition: all .2s ease;
-        } i:hover{font-weight: bold;}
-        p{color: #333;
-          font-weight: lighter;
-        }
-        color: $blue;
+  .top_services_navigation {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .top_services_items {
+      text-decoration: none;
+      i {
+        font-size: 1.5em;
+        font-weight: lighter;
+        transition: all 0.2s ease;
       }
+      i:hover {
+        font-weight: bold;
+      }
+      p {
+        color: #333;
+        font-weight: lighter;
+      }
+      color: $blue;
     }
+  }
 }
 
-
-// banner section
+// top blog section
+.top_blog_container {
+  width: 85%;
+  margin: 4em auto;
+  .blog_first_row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .blog_second_row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.blog_item {
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  text-decoration: none;
+  img {
+    width: 20%;
+  }
+  .blog_content {
+    padding: 2em;
+    width: 80%;
+    font-family: "iransans";
+    .blog_title {
+      color: #333;
+      transition: all .2s ease-out;
+    } 
+    .blog_caption {
+      color: $gray;
+    }
+  }
+}.blog_item:hover .blog_title{color: $blue;}
