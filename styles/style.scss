@@ -423,6 +423,7 @@ $gray: #646464;
       border-bottom:1px solid $gray;
       justify-content: space-between;
       padding: 0em 7em;
+      padding-bottom: 2em;
       a{
         text-decoration: none;
         font-family: 'iransans';
@@ -430,4 +431,35 @@ $gray: #646464;
         transition: all .2s linear;
       } a:hover{color: $blue;}
     }
+}
+
+// copyright section
+.copyright_container{
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  .footer_navbar{
+    .footer_navigation_menu{
+      color: #fff;
+      .footer_navigation_item{
+        display: inline-block;
+          a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'iransans';
+            padding: 0 .5em;
+            transition: all .2s ease-in-out;
+          } a:hover{color: $blue;}
+      }
+    }
+  }
+  .developer_container{
+    color: #6e6e6e;
+    font-family: 'roboto';
+    a{
+      color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+  }a:hover{color: $blue;}
+  }
 }
