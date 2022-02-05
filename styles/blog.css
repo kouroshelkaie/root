@@ -38,8 +38,92 @@ html {
 }
 
 .inner_container {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   max-width: 2000px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.header_container {
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em;
+}
+
+.header_container .logo {
+  width: 3em;
+}
+
+.header_container .header_contact_items {
+  font-family: 'iransans';
+  padding-top: 1em;
+}
+
+.header_container .header_contact_items i {
+  color: #377ef9;
+}
+
+.header_container .header_contact_items span {
+  color: #333;
+}
+
+.header_container .header_contact_items a {
+  margin: 0 .5em;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header_container .header_contact_items a i {
+  color: #646464;
+}
+
+.header_container .header_contact_items a i:hover {
+  color: #377ef9;
+}
+
+#header_mail {
+  font-family: 'roboto';
+}
+
+.main_container {
+  font-family: 'iransans';
+  border-bottom: 1px solid #646464;
+}
+
+.main_container .post_title {
+  color: #333;
+  margin: 1em 0;
+}
+
+.main_container .date {
+  margin: 1em 0;
+  color: #646464;
+}
+
+.main_container .date i {
+  color: #377ef9;
+}
+
+.main_container .post_banner {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.main_container .post_content {
+  color: #333;
+  margin: 1em 0;
+  font-size: 1.2em;
+  line-height: 1.9em;
 }
 /*# sourceMappingURL=blog.css.map */

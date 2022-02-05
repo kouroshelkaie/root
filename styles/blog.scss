@@ -40,7 +40,63 @@ html {
   
   // modifiers
   .inner_container {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     max-width: 2000px;
   }
+body{
+    background-color: #f7f7f7;
+}
+//   header section
+.header_container{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    .logo{
+        width: 3em;
+    }
+    .header_contact_items{
+        font-family: 'iransans';
+        padding-top: 1em;
+        i{color: $blue;}
+        span{color: #333;}
+    }
+    .header_contact_items{
+        a{
+            margin: 0 .5em;
+            transition: all .2s linear;
+            i{
+                color: $gray;
+            }i:hover{color: $blue;}
+        }
+    }
+}#header_mail{font-family: 'roboto';}
+
+// main post section
+.main_container{
+  font-family: 'iransans';
+  border-bottom: 1px solid $gray;
+    .post_title{
+      color: #333;
+      margin: 1em 0;
+    }
+    .date{
+      margin: 1em 0;
+      color: $gray;
+      i{color: $blue;}
+    }
+    .post_banner{
+      width: 100%;
+      margin: 1em 0;
+    }
+    .post_content{
+      color: #333;
+      margin: 1em 0;
+      font-size: 1.2em;
+      line-height: 1.9em;
+    }
+}
