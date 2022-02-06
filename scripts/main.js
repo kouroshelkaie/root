@@ -1,16 +1,10 @@
-AOS.init();
 
-// typed.js
-var typed = new Typed('#typed', {
-  stringsElement: '#typed-strings',
-  loop:true,
-  shuffle:true,
-  typeSpeed:200,
-  backSpeed: 150,
-});
-
-
-/* particles.js*/
-particlesJS.load('particles-js', 'assets/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+// go up button
+let btn = document.querySelector(".up_button")
+window.addEventListener("scroll",()=>{
+  if(window.scrollY > 1000) {
+    btn.style.display = "block"
+  } else{
+    btn.style.display = "none"
+  }
+})

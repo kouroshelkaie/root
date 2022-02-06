@@ -100,3 +100,16 @@ body{
       line-height: 1.9em;
     }
 }
+
+// go up button
+.up_button{
+  position: fixed;
+  right: 1%; bottom: 2%;
+  background: transparent;
+  color: $gray;
+  font-size: 2em;
+  display: none;
+  transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+} .up_button:hover{
+  color: $blue;
+}

@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0%; padding: 0%;
 }
+
 *,
 *:after,
 *:before {
@@ -462,4 +466,17 @@ $gray: #646464;
     transition: all .2s ease;
   }a:hover{color: $blue;}
   }
+}
+
+// go up button
+.up_button{
+  position: fixed;
+  right: 1%; bottom: 2%;
+  background: transparent;
+  color: $gray;
+  font-size: 2em;
+  display: none;
+  transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+} .up_button:hover{
+  color: $blue;
 }

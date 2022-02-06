@@ -126,4 +126,20 @@ body {
   font-size: 1.2em;
   line-height: 1.9em;
 }
+
+.up_button {
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  background: transparent;
+  color: #646464;
+  font-size: 2em;
+  display: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.up_button:hover {
+  color: #377ef9;
+}
 /*# sourceMappingURL=blog.css.map */

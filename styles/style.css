@@ -1,6 +1,10 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
 }
 
 *,
@@ -576,6 +580,22 @@ html {
 }
 
 .copyright_container .developer_container a:hover {
+  color: #377ef9;
+}
+
+.up_button {
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  background: transparent;
+  color: #646464;
+  font-size: 2em;
+  display: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.up_button:hover {
   color: #377ef9;
 }
 /*# sourceMappingURL=style.css.map */
