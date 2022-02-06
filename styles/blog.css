@@ -58,11 +58,26 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 1em;
+  padding-top: .5em;
+  padding-bottom: 1.1em;
 }
 
-.header_container .logo {
-  width: 3em;
+.header_container a {
+  text-decoration: none;
+  font-family: 'iransans';
+  color: #333;
+  padding-top: 1em;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.header_container a i {
+  color: #377ef9;
+  padding: 0em .5em;
+}
+
+.header_container a:hover {
+  color: #377ef9;
 }
 
 .header_container .header_contact_items {
