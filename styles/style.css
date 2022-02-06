@@ -103,6 +103,22 @@ html {
   width: 3.5em;
 }
 
+.header .header_navigation .header_logo .logo_caption {
+  color: #646464;
+}
+
+.header .header_navigation .header_logo .logo_title {
+  color: #377ef9;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header .header_navigation .logo_container {
+  text-align: center;
+  padding-top: .3em;
+  padding-right: .5em;
+}
+
 .header .header_navigation .header_navbar .header_navigation_menu {
   list-style-type: none;
 }
@@ -348,6 +364,7 @@ html {
 
 .present_container .present_data .present_title {
   font-family: 'rezvan2';
+  font-weight: bolder;
   color: #3d3d3d;
   font-weight: lighter;
 }
