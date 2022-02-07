@@ -1,0 +1,165 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0%; padding: 0%;
+  }
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: inherit;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    scroll-behavior: smooth;
+  }
+  
+  //   Assets
+  $blue: #377ef9;
+  $gray: #646464;
+  
+  //================
+  // fonts
+  @font-face {
+    font-family: "iransans";
+    src: url("../fonts/iransans.ttf");
+  }
+  @font-face {
+    font-family: "iransans2";
+    src: url("../fonts/iransans2.ttf");
+  }
+  @font-face {
+    font-family: "rezvan";
+    src: url("../fonts/Rezvan.ttf");
+  }
+  @font-face {
+    font-family: "rezvan2";
+    src: url("../fonts/Rezvan-reg.ttf");
+  }
+  
+  // ==============
+  
+  // modifiers
+  .inner_container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 2000px;
+  }
+
+//   header section
+.header_container{
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    position: sticky;
+    top: 0%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: .5em;
+    padding-bottom: 1.1em;
+    a{
+      text-decoration: none;
+      font-family: 'iransans';
+      color: #333;
+      padding-top: 1em;
+      transition: all .2s linear;
+        i{
+          color: $blue;
+          padding: 0em .5em;
+        }
+    } a:hover{color: $blue;}
+    .header_contact_items{
+        font-family: 'iransans';
+        padding-top: 1em;
+        i{color: $blue;}
+        span{color: #333;}
+    }
+    .header_contact_items{
+        a{
+            margin: 0 .5em;
+            transition: all .2s linear;
+            i{
+                color: $gray;
+            }i:hover{color: $blue;}
+        }
+    }
+}#header_mail{font-family: 'roboto';}
+
+// footer section
+.footer_container{
+    padding: 2em 5em;
+    background-color: #333;
+      .footer_contact{
+        display: flex;
+        justify-content: space-between;
+          .footer_contact_items{
+            i{color: $blue;}
+            span{
+              color: #fff;
+              font-family: 'iransans';
+            }
+            #footer_mail{font-family: 'roboto';}
+          }
+          .footer_contact_items a{
+            margin: 0 .7em;
+          }
+      }
+      .footer_caption{
+        color: #fff;
+        font-family: 'iransans';
+        margin: 3em 0;
+        text-align: center;
+        padding: 1em 4em;
+      }
+      .city_container{
+        display: flex;
+        border-bottom:1px solid $gray;
+        justify-content: space-between;
+        padding: 0em 7em;
+        padding-bottom: 2em;
+        a{
+          text-decoration: none;
+          font-family: 'iransans';
+          color: #fff;  
+          transition: all .2s linear;
+        } a:hover{color: $blue;}
+      }
+  }
+  
+  // copyright section
+  .copyright_container{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    .footer_navbar{
+      .footer_navigation_menu{
+        color: #fff;
+        .footer_navigation_item{
+          display: inline-block;
+            a{
+              text-decoration: none;
+              color: #fff;
+              font-family: 'iransans';
+              padding: 0 .5em;
+              transition: all .2s ease-in-out;
+            } a:hover{color: $blue;}
+        }
+      }
+    }
+    .developer_container{
+      color: #6e6e6e;
+      font-family: 'roboto';
+      a{
+        color: #fff;
+      text-decoration: none;
+      transition: all .2s ease;
+    }a:hover{color: $blue;}
+    }
+  }
+  
+
+//   main portfolios section
+.main_container{
+}
