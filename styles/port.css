@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 @font-face {
   font-family: "iransans";
   src: url("../fonts/iransans.ttf");
@@ -41,13 +45,8 @@ html {
   src: url("../fonts/Rezvan-reg.ttf");
 }
 
-.inner_container {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 2000px;
-}
-
 .header_container {
+  z-index: 4;
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   position: -webkit-sticky;
@@ -219,5 +218,144 @@ html {
 
 .copyright_container .developer_container a:hover {
   color: #377ef9;
+}
+
+.title_container {
+  text-align: center;
+  padding-top: 2em;
+  font-family: 'iransans';
+}
+
+.title_container h4 {
+  color: #377ef9;
+}
+
+.title_container h6 {
+  border-bottom: 0.5px solid #377ef9;
+  display: inline-block;
+  padding-bottom: .5em;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.main_container {
+  width: 95%;
+  margin: 2em auto;
+  max-width: 2000px;
+}
+
+.main_container #search {
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  width: 100%;
+  padding: 1em 2em;
+}
+
+.main_container #search::-webkit-input-placeholder {
+  font-family: 'iransans';
+  font-size: 1.3em;
+}
+
+.main_container #search:-ms-input-placeholder {
+  font-family: 'iransans';
+  font-size: 1.3em;
+}
+
+.main_container #search::-ms-input-placeholder {
+  font-family: 'iransans';
+  font-size: 1.3em;
+}
+
+.main_container #search::placeholder {
+  font-family: 'iransans';
+  font-size: 1.3em;
+}
+
+.main_container #search:focus {
+  outline: none;
+  border: 1px solid #377ef9;
+}
+
+.card_container {
+  padding: 6em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'iransans';
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card_container .card {
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  width: 20%;
+  border-radius: 4px;
+  margin: 1em 2em;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card_container .card .card_img {
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.card_container .card .card_details {
+  text-align: right;
+  position: relative;
+}
+
+.card_container .card .card_details .card_time {
+  padding: 0.3em;
+  background-color: #377ef9;
+  width: 60%;
+  position: absolute;
+  top: -10%;
+  right: 4%;
+  border-radius: 4px;
+}
+
+.card_container .card .card_details .card_time .time_logo {
+  color: #fff;
+  margin: 0 0.5em;
+}
+
+.card_container .card .card_details .card_time .time_portfolio {
+  color: #fff;
+}
+
+.card_container .card .card_details .card_define {
+  padding: 4em 2em 2em;
+}
+
+.card_container .card .card_details .card_define .card_caption {
+  color: #646464;
+  margin: 0.5em 0;
+}
+
+.card_container .card .card_details .card_define .card_title {
+  color: #333;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.card_container .card .card_details .card_define .card_title:hover {
+  color: #377ef9;
+}
+
+.card_container .card .card_details .more_link {
+  color: #377ef9;
+  display: block;
+  margin-top: 1em;
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=port.css.map */

@@ -16,11 +16,13 @@ html {
     border: none;
     scroll-behavior: smooth;
   }
-  
+  body{
+      background-color: #f7f7f7;
+  }
   //   Assets
   $blue: #377ef9;
   $gray: #646464;
-  
+
   //================
   // fonts
   @font-face {
@@ -42,15 +44,10 @@ html {
   
   // ==============
   
-  // modifiers
-  .inner_container {
-    width: 95%;
-    margin: 0 auto;
-    max-width: 2000px;
-  }
 
 //   header section
 .header_container{
+    z-index: 4;
     background-color: #fff;
     border-bottom: 1px solid #e6e6e6;
     position: sticky;
@@ -159,7 +156,100 @@ html {
     }
   }
   
+//   title section
+.title_container{
+    text-align: center;
+    padding-top: 2em;
+    font-family: 'iransans';
+    h4{
+        color: $blue;
+    }
+    h6{
+        border-bottom: .5px solid $blue;
+        display: inline-block;
+        padding-bottom: .5em;
+        font-size: 1.1em;
+        color: #333;
+    }
+}
 
 //   main portfolios section
 .main_container{
+    width: 95%;
+    margin: 2em auto;
+    max-width: 2000px;
+    #search{
+        border: 1px solid #e6e6e6;
+        background-color: #fff;
+        width: 100%;
+        padding: 1em 2em;
+    }#search::placeholder{
+        font-family: 'iransans';
+        font-size: 1.3em;
+    }#search:focus{outline: none;border: 1px solid $blue;}
 }
+
+// card section
+.card_container{
+    padding: 6em 1em;
+    display: flex;
+    font-family: 'iransans';
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .card {
+        cursor: pointer;
+        border: 1px solid #e6e6e6;
+        width: 20%;
+        border-radius: 4px;
+        margin: 1em 2em;
+        background-color: #fff;
+        overflow: hidden;
+        .card_img {
+          width: 100%;
+          border-radius: 4px 4px 0px 0px;
+          transition: all 0.3s ease-in-out;
+        }
+        .card_details {
+          text-align: right;
+          position: relative;
+          .card_time {
+            padding: 0.3em;
+            background-color: $blue;
+            width: 60%;
+            position: absolute;
+            top: -10%;
+            right: 4%;
+            border-radius: 4px;
+            .time_logo {
+              color: #fff;
+              margin: 0 0.5em;
+            }
+            .time_portfolio {
+              color: #fff;
+            }
+          }
+          .card_define {
+            padding: 4em 2em 2em;
+            .card_caption {
+              color: $gray;
+              margin: 0.5em 0;
+            }
+            .card_title {
+              color: #333;
+              transition: all 0.2s linear;
+            }
+            .card_title:hover {
+              color: $blue;
+            }
+          }
+          .more_link {
+            color: $blue;
+            display: block;
+            margin-top: 1em;
+          }
+        }
+      }
+}
+.card:hover img {
+    transform: scale(1.1);
+  }
