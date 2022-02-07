@@ -65,8 +65,9 @@
 
     <!-- main portfolios section -->
     <main class="main_container">
-        <form action="">
-            <input type="text" id="search" placeholder="دنبال چه پروژه ای میگردی...؟">
+        <form action="" id="form">
+            <input type="text" id="search" placeholder="جستجو بر اساس شهر  . . .">
+            <button>Search</button>
         </form>
 
         <!-- card section -->
@@ -110,7 +111,7 @@
                         <span class="time_portfolio">دوشنبه 25 بهمن 1398</span>
                     </div>
                     <div class="card_define">
-                        <h4 class="card_title">اجرا دوربین مداربسته در <span id="searchItem">مرزن آباد</span></h4>
+                        <h4 class="card_title">اجرا دوربین مداربسته در <span id="searchItem">نوشهر</span></h4>
                         <h5 class="card_caption">نمونه کار پروژه ی نصب و اجرای دوربین های مدار بسته برند داهوا برای سازه ی ویلایی با متراژ 350 متر بصورت دوبلکس</h5>
                     </div>
                 </div>
@@ -243,7 +244,7 @@
             <nav class="footer_navbar">
                 <ul class="footer_navigation_menu">
                     <li class="footer_navigation_item"><a href="index.html">خانه</a></li> |
-                    <li class="footer_navigation_item"><a href="">سرویسها</a></li> |
+                    <li class="footer_navigation_item"><a href="index.html">سرویسها</a></li> |
                     <li class="footer_navigation_item"><a href="">پروژه ها</a></li> |
                     <li class="footer_navigation_item"><a href="blog.html">وبلاگ</a></li> |
                     <li class="footer_navigation_item"><a href="">درباره ما</a></li> |
@@ -289,21 +290,3 @@
 
 
 
-
-<!-- 
-
-
-const input = document.querySelector("#inp")
-let menu = document.querySelector(".menu")
-let items = document.querySelectorAll(".item")
-let array = []
-
-items.forEach((item)=>{
-    array.push(item.textContent)
-})
-
-
-let filtered = array.filter((item)=>{
-    return item.includes("ha")
-})
-console.log(filtered) -->
