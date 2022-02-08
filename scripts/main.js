@@ -42,3 +42,11 @@ e.preventDefault()
   dom(filteredItems)
 })
 
+
+// sidebar menu
+let sidebarMenu = document.querySelector(".header_navigation_menu")
+console.log(sidebarMenu)
+const sidebar = ()=>{
+  sidebarMenu.classList.add(".active")
+}
+
