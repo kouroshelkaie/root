@@ -21,6 +21,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "iransans";
   src: url("../fonts/iransans.ttf");
@@ -614,5 +618,39 @@ html {
 
 .up_button:hover {
   color: #377ef9;
+}
+
+@media (max-width: 1000px) {
+  .header_contact .header_contact_items #header_mail {
+    font-family: "Roboto";
+    font-size: 7em;
+  }
+  .header_contact .header_contact_items i {
+    font-size: 0.9em;
+    color: #377ef9;
+    padding: 0 0.5em;
+    font-weight: 500;
+  }
+  .header_contact .header_contact_items span {
+    color: #646464;
+    font-size: .8em;
+  }
+  .header_contact #header_mai {
+    font-size: 10em;
+  }
+  .socialmedias a {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 850px) {
+  .header_contact {
+    display: none;
+    border: none;
+    padding: 0%;
+  }
+  .header_contact_items {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

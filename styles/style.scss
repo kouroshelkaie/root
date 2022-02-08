@@ -16,7 +16,9 @@ html {
   border: none;
   scroll-behavior: smooth;
 }
-
+body{
+  overflow: hidden;
+}
 //   Assets
 $blue: #377ef9;
 $gray: #646464;
@@ -492,4 +494,37 @@ $gray: #646464;
   transition: all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 } .up_button:hover{
   color: $blue;
+}
+
+
+// ============
+// Media queries
+// ============
+
+// header contact
+@media(max-width:1000px) {
+  .header_contact {
+    .header_contact_items {
+      #header_mail {
+        font-family: "Roboto";
+        font-size: 7em;
+      }
+      i {
+        font-size: 0.9em;
+        color: $blue;
+        padding: 0 0.5em;
+        font-weight: 500;
+      }
+      span {
+        color: $gray;
+        font-size: .8em;
+      }
+    }
+    #header_mai{font-size: 10em;}
+  }
+  .socialmedias a{font-size: .8em;}
+}
+@media(max-width:850px) {
+.header_contact{display:none; border: none; padding: 0%;}
+.header_contact_items{display:none;}
 }
