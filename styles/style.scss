@@ -1176,3 +1176,39 @@ $gray: #646464;
     }
   }
 }
+
+
+// =====
+// brand section
+// =====
+@media(max-width:768px) {
+  .brand_items{
+    h3{
+      font-size: .9em;
+    }
+  }
+}
+
+@media(max-width:565px) {
+  .brand_items{
+    h3{
+      font-size: .8em;
+    }
+  }
+}
+
+@media(max-width:465px) {
+  .brand_items{
+    h3{
+      font-size: .7em;
+    }
+  }
+}
+
+@media(max-width:380px) {
+  .brand_items{
+    h3{
+      font-size: .6em;
+    }
+  }
+}
