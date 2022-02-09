@@ -203,14 +203,14 @@ $gray: #646464;
     padding: 0.5em;
   }
   .card_container {
-    margin: 3em 0;
     margin: 3em 0 2em;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .card {
       cursor: pointer;
       border: 1px solid #e6e6e6;
-      width: 23%;
+      width: 25%;
       border-radius: 4px;
       margin: 0 2em;
       background-color: #fff;
@@ -228,7 +228,7 @@ $gray: #646464;
           background-color: $blue;
           width: 60%;
           position: absolute;
-          top: -10%;
+          top: -7%;
           right: 4%;
           border-radius: 4px;
           .time_logo {
@@ -240,7 +240,7 @@ $gray: #646464;
           }
         }
         .card_define {
-          padding: 4em 2em 2em;
+          padding: 3em 2em 2em;
           .card_caption {
             color: $gray;
             margin: 0.5em 0;
@@ -692,3 +692,159 @@ $gray: #646464;
     }
   }
 }
+
+
+// ======
+// top portfolio section
+// ======
+@media(max-width:1200px) {
+.time_portfolio{font-size: 10em;}
+.top_portfolio_container{
+  .top_portfolio_title{}
+  .top_portfolio_caption{}
+  .card_container{
+    .card{
+      img{}
+      .card_details{
+        .card_time{
+          .time_logo{}
+          .time_portfolio{font-size: .8em;}
+        }
+        .card_define{
+          padding: 2em 1em;
+        }
+      }
+    }
+  }
+}
+}
+
+@media(max-width:950px) {
+  .top_portfolio_container{
+    .top_portfolio_title{}
+    .top_portfolio_caption{}
+    .card_container{
+      .card{
+        img{}
+        .card_details{
+          .card_time{
+            padding: .1em;
+            .time_logo{font-size: .8em;}
+            .time_portfolio{font-size: .7em;}
+          }
+          .card_define{
+            padding: 1.5em 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:820px){
+  .card_caption{
+    font-size: .7em;
+    font-weight: bold;
+  }
+}
+
+// bomile breakpoint
+@media(max-width:780px) {
+  .top_portfolio_container{
+    .card_container{
+      .card{
+        width: 100%;
+        margin: 2em 5em;
+          .card_details{
+            .card_time{
+              top: -35%;
+              padding: .5em 0;
+              .time_logo{
+                font-size: 1.2em;
+              }
+              .time_portfolio{
+                font-size: 1.2em;
+              }
+            }
+          }
+          .card_define{
+            margin-top: 3em;
+            .card_title{
+              font-size: 1.2em;
+            }
+            .card_caption{
+              font-size: 1.2em;
+            }
+          }
+        }
+      }
+    }
+}
+
+@media(max-width:500px) {
+  .top_portfolio_container{
+    .card_container{
+      .card{
+        width: 100%;
+        margin: 1em 4em;
+          .card_details{
+            .card_time{
+              top: -25%;
+              padding: .5em 0;
+              .time_logo{
+                font-size: 1em;
+              }
+              .time_portfolio{
+                font-size: 1em;
+              }
+            }
+          }
+          .card_define{
+            margin-top: 2em;
+            .card_title{
+              font-size: 1em;
+            }
+            .card_caption{
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+}
+
+@media(max-width:400px) {
+  .top_portfolio_container{
+    .card_container{
+      .card{
+        width: 100%;
+        margin: 1em 2em;
+          .card_details{
+            .card_time{
+              top: -25%;
+              padding: .5em 0;
+              .time_logo{
+                font-size: .9em;
+              }
+              .time_portfolio{
+                font-size: .9em;
+              }
+            }
+          }
+          .card_define{
+            margin-top: 2em;
+            .card_title{
+              font-size: 1em;
+            }
+            .card_caption{
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+}
+
+// ======
+// top services section
+// ======
