@@ -51,6 +51,12 @@ body {
   max-width: 2000px;
 }
 
+.clf::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .header {
   background-color: #fff;
   font-family: "iransans";
@@ -357,9 +363,8 @@ body {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   width: 100%;
-  height: 65vh;
   background-image: url(../images/present/1.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -909,6 +914,167 @@ body {
   }
   .top_services_container .top_services_navigation .top_services_items p {
     font-size: .7em;
+  }
+}
+
+@media (max-width: 1300px) {
+  .present_container .present_data .present_title {
+    font-size: 1.7em;
+  }
+  .present_container .present_data .present_define {
+    font-size: 1.1em;
+  }
+  .present_container .present_data a .present_button {
+    padding: .9em 2em;
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+  }
+  .present_container .present_data .present_define {
+    font-size: .9em;
+  }
+  .present_container .present_data a .present_button {
+    padding: .8em 1.8em;
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 850px) {
+  .present_container {
+    margin: 2em 0;
+    padding: 2em;
+  }
+  .present_container .present_data {
+    width: 55%;
+  }
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+  }
+  .present_container .present_data .present_define {
+    font-size: .9em;
+    margin: 1em 0;
+    color: #333;
+    padding: .8em;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  .present_container .present_data a .present_button {
+    padding: .8em 1.8em;
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 750px) {
+  .present_container {
+    margin: 1em 0;
+    padding: 2em;
+  }
+  .present_container .present_data {
+    width: 60%;
+  }
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+  }
+  .present_container .present_data .present_define {
+    font-size: .9em;
+    line-height: 20px;
+    margin: 1em 0;
+    margin: 1em 0;
+    color: #333;
+    padding: .5em;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  .present_container .present_data a .present_button {
+    padding: .7em 1.7em;
+    font-size: .6em;
+  }
+}
+
+@media (max-width: 670px) {
+  .present_container {
+    margin: 0em;
+    padding: 1em;
+  }
+  .present_container .present_data {
+    width: 70%;
+    float: left;
+    text-align: left;
+  }
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .present_container .present_data .present_define {
+    font-size: 1em;
+    line-height: 20px;
+    margin: 1em 0;
+    color: #333;
+    padding: .5em;
+    border-radius: 1px;
+    background-color: #fff;
+  }
+  .present_container .present_data a .present_button {
+    padding: .9em 1.9em;
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 600px) {
+  .present_container {
+    margin: 0em;
+    padding: 1em;
+  }
+  .present_container .present_data {
+    width: 100%;
+    text-align: left;
+  }
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+  }
+  .present_container .present_data .present_define {
+    font-size: 1em;
+    line-height: 20px;
+    margin: 1em 0;
+    color: #333;
+    padding: .5em;
+    border-radius: 1px;
+    background-color: #fff;
+  }
+  .present_container .present_data a .present_button {
+    padding: .7em 1.7em;
+    font-size: .6em;
+  }
+}
+
+@media (max-width: 500px) {
+  .present_container {
+    margin: 0em;
+    padding: 1em;
+  }
+  .present_container .present_data {
+    width: 100%;
+    text-align: left;
+  }
+  .present_container .present_data .present_title {
+    font-size: 1.5em;
+  }
+  .present_container .present_data .present_define {
+    font-size: 1em;
+    line-height: 20px;
+    margin: 1em 0;
+    color: #333;
+    padding: .5em;
+    border-radius: 1px;
+  }
+  .present_container .present_data a .present_button {
+    width: 100%;
+    padding: .9em 1.9em;
+    font-size: .6em;
   }
 }
 /*# sourceMappingURL=style.css.map */
