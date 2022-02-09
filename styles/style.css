@@ -890,4 +890,25 @@ body {
     font-size: 1em;
   }
 }
+
+@media (max-width: 670px) {
+  .top_services_container .top_services_navigation .top_services_items i {
+    font-size: 1.2em;
+  }
+  .top_services_container .top_services_navigation .top_services_items p {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 500px) {
+  .top_services_container {
+    padding: 1em 0;
+  }
+  .top_services_container .top_services_navigation .top_services_items i {
+    font-size: 1em;
+  }
+  .top_services_container .top_services_navigation .top_services_items p {
+    font-size: .7em;
+  }
+}
 /*# sourceMappingURL=style.css.map */

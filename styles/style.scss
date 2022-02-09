@@ -272,7 +272,6 @@ $gray: #646464;
 
 // top services section
 .top_services_container {
-  // background-color: #faf9f9;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
   padding: 3em 0;
@@ -848,3 +847,26 @@ $gray: #646464;
 // ======
 // top services section
 // ======
+@media(max-width:670px) {
+  .top_services_container{
+
+    .top_services_navigation{
+      .top_services_items{
+        i{font-size: 1.2em;}
+        p{font-size: .9em;}
+      }
+    }
+  }
+}
+
+@media(max-width:500px) {
+  .top_services_container{
+    padding: 1em 0;
+    .top_services_navigation{
+      .top_services_items{
+        i{font-size: 1em;}
+        p{font-size: .7em;}
+      }
+    }
+  }
+}
