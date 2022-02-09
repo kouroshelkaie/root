@@ -35,6 +35,7 @@
     <script src="scripts/particles.js" defer></script>
     <script src="scripts/app.js" defer></script>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/sidebar.js" defer></script>
     <title> هوشمندسازان چالوس - دوربین مداربسته - هوشمندسازی.خانه هوشمند.درب اتوماتیک.جک دروازه.برق ساختمان </title>
 </head>
 <body>
@@ -74,8 +75,10 @@
                 </figure>
                 <nav class="header_navbar">
                     <ul class="header_navigation_menu">
+                        <li id="closeBtn" onclick="closeSidebar()">&#x292B;</li>
+                        <a href="" id="navInsta"><button data-text="instagram">Instagram</button></a>
                         <li class="header_navigation_item"><a href="">خانه</a></li>
-                        <li class="header_navigation_item" id="opendp"><a href="">سرویسها</a><span>&#8964;</span>
+                        <li class="header_navigation_item" id="opendp" style="color: #333; cursor: pointer;"><a>سرویسها</a><span>&#8964;</span>
                             <!-- dropdown -->
                             <ul class="dropdown_container">
                                 <li class="dropdown_item"><a href="services pages/doorbin.html"> دوربین مداربسته</a></li>
