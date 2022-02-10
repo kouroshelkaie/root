@@ -205,6 +205,7 @@ body {
 }
 
 .copyright_container .developer_container {
+  text-align: left;
   color: #6e6e6e;
   font-family: 'roboto';
 }
@@ -329,7 +330,7 @@ body {
 }
 
 .card_container .card .card_details .card_time {
-  padding: 0.3em;
+  padding: 0.2em;
   background-color: #377ef9;
   width: 60%;
   position: absolute;
@@ -341,10 +342,12 @@ body {
 .card_container .card .card_details .card_time .time_logo {
   color: #fff;
   margin: 0 0.5em;
+  font-size: .9em;
 }
 
 .card_container .card .card_details .card_time .time_portfolio {
   color: #fff;
+  font-size: .8em;
 }
 
 .card_container .card .card_details .card_define {
@@ -381,5 +384,425 @@ body {
 .card:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 1185px) {
+  .header_container .header_contact_items i {
+    font-size: .9em;
+  }
+  .header_container .header_contact_items span {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 980px) {
+  .inner_container {
+    width: 70%;
+  }
+  .header_container .header_contact_items i {
+    font-size: .7em;
+  }
+  .header_container .header_contact_items span {
+    font-size: .8em;
+  }
+  .header_container .socialmedias a i {
+    padding: 0em;
+  }
+}
+
+@media (max-width: 910px) {
+  .inner_container {
+    width: 70%;
+  }
+  .header_container .header_contact_items i {
+    font-size: .6em;
+  }
+  .header_container .header_contact_items span {
+    font-size: .7em;
+  }
+  .header_container .socialmedias a i {
+    padding: 0em;
+  }
+}
+
+@media (max-width: 810px) {
+  .inner_container {
+    width: 80%;
+  }
+  .header_container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 4em;
+    padding-left: 4em;
+  }
+  .header_container .phone_hide {
+    display: none;
+  }
+  .header_container .header_contact_items i {
+    font-size: 1em;
+  }
+  .header_container .socialmedias a i {
+    padding: 0em;
+  }
+}
+
+@media (max-width: 550px) {
+  .inner_container {
+    width: 90%;
+  }
+  .main_container h1 {
+    font-size: 1.4em;
+  }
+  .header_container {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer_container .footer_contact .footer_contact_items span {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer_container .footer_contact .footer_contact_items i {
+    font-size: .9em;
+  }
+  .footer_container .footer_contact .footer_contact_items span {
+    font-size: .8em;
+  }
+  .footer_container .footer_contact .socialmedias a {
+    margin: 0 .5em;
+  }
+  .footer_container .footer_contact .socialmedias a i {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer_container {
+    padding: 2em 3em;
+  }
+}
+
+@media (max-width: 860px) {
+  .footer_container {
+    padding: 2em 2em;
+  }
+}
+
+@media (max-width: 820px) {
+  .footer_container .footer_contact .footer_contact_items i {
+    font-size: .8em;
+  }
+  .footer_container .footer_contact .footer_contact_items span {
+    font-size: .7em;
+  }
+  .footer_container .footer_contact .socialmedias a {
+    margin: 0 .5em;
+  }
+  .footer_container .footer_contact .socialmedias a i {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_container .footer_contact {
+    display: block;
+    text-align: center;
+  }
+  .footer_container .footer_contact .footer_contact_items {
+    margin: 1em 0;
+  }
+  .footer_container .footer_contact .footer_contact_items i {
+    font-size: 1.2em;
+  }
+  .footer_container .footer_contact .footer_contact_items span {
+    font-size: 1.2em;
+  }
+  .footer_container .footer_contact .socialmedias a {
+    margin: 1em .5em;
+  }
+  .footer_container .footer_contact .socialmedias a i {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_container .footer_contact {
+    display: block;
+    text-align: center;
+  }
+  .footer_container .footer_contact .footer_contact_items {
+    margin: 1em 0;
+  }
+  .footer_container .footer_contact .footer_contact_items i {
+    font-size: 1em;
+  }
+  .footer_container .footer_contact .footer_contact_items span {
+    font-size: 1em;
+  }
+  .footer_container .footer_contact .socialmedias a {
+    margin: 1em .5em;
+  }
+  .footer_container .footer_contact .socialmedias a i {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer_container .footer_caption {
+    margin: 2em 0;
+    padding: 1em 1em;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer_container .footer_caption {
+    margin: 2em 0;
+    padding: 1em 1em;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer_container {
+    padding: 2em 1em;
+  }
+  .footer_container .footer_caption {
+    margin: 2em 0;
+    padding: 1em 0em;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_container .city_container {
+    padding: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer_container .city_container {
+    padding: 1em;
+  }
+  .footer_container .city_container .city_item {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 1150px) {
+  .footer_container .copyright_container .footer_navbar .footer_navigation_menu .footer_navigation_item a {
+    padding: .2em;
+  }
+  .footer_container .copyright_container .developer_container {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1028px) {
+  .footer_container .copyright_container .footer_navbar .footer_navigation_menu .footer_navigation_item a {
+    padding: .1em;
+    font-size: .9em;
+  }
+  .footer_container .copyright_container .developer_container {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 875px) {
+  .footer_container {
+    padding-bottom: 0em;
+  }
+  .footer_container .copyright_container {
+    display: block;
+  }
+  .footer_container .copyright_container .footer_navbar {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .footer_container .copyright_container .footer_navbar .footer_navigation_menu .footer_navigation_item a {
+    padding: .1em;
+    font-size: .9em;
+  }
+  .footer_container .copyright_container .developer_container {
+    text-align: center;
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 875px) {
+  .footer_container {
+    padding-bottom: 0em;
+  }
+  .footer_container .copyright_container {
+    display: block;
+  }
+  .footer_container .copyright_container .footer_navbar {
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  .footer_container .copyright_container .footer_navbar .footer_navigation_menu .footer_navigation_item a {
+    padding: .1em;
+    font-size: .8em;
+  }
+  .footer_container .copyright_container .developer_container {
+    text-align: center;
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 550px) {
+  .main_container form #search {
+    padding: .8em 1em;
+    width: 80%;
+  }
+  .main_container form button {
+    padding: 0 1em;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 1385px) {
+  .main_container .card_container .card {
+    width: 18%;
+  }
+  .main_container .card_container .card .card_details .time_logo {
+    font-size: .8em;
+  }
+  .main_container .card_container .card .card_details .time_portfolio {
+    font-size: .7em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 2em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main_container .card_container .card {
+    width: 27%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main_container .card_container .card {
+    width: 25%;
+  }
+}
+
+@media (max-width: 870px) {
+  .main_container .card_container .card .card_details .time_logo {
+    font-size: .7em;
+  }
+  .main_container .card_container .card .card_details .time_portfolio {
+    font-size: .6em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 2em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 850px) {
+  .main_container .card_container .card {
+    width: 40%;
+  }
+  .main_container .card_container .card .card_details .time_logo {
+    font-size: .9em;
+  }
+  .main_container .card_container .card .card_details .time_portfolio {
+    font-size: .8em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 2em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 730px) {
+  .main_container .card_container .card {
+    width: 38%;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_container .card_container .card {
+    width: 100%;
+  }
+  .main_container .card_container .card .card_details .card_time {
+    padding: .5em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_logo {
+    font-size: 1.2em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_portfolio {
+    font-size: 1.2em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 3em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: 1.5em;
+  }
+  .main_container .card_container .card .card_define .card_caption {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .main_container .card_container .card {
+    width: 100%;
+  }
+  .main_container .card_container .card .card_details .card_time {
+    padding: .5em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_logo {
+    font-size: 1em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_portfolio {
+    font-size: 1em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 2em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: 1.2em;
+  }
+  .main_container .card_container .card .card_define .card_caption {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 400px) {
+  .main_container .card_container .card {
+    width: 100%;
+  }
+  .main_container .card_container .card .card_details .card_time {
+    padding: .2em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_logo {
+    font-size: .8em;
+  }
+  .main_container .card_container .card .card_details .card_time .time_portfolio {
+    font-size: .8em;
+  }
+  .main_container .card_container .card .card_define {
+    padding: 2em 1em;
+  }
+  .main_container .card_container .card .card_define .card_title {
+    font-size: 1em;
+  }
+  .main_container .card_container .card .card_define .card_caption {
+    font-size: .8em;
+  }
 }
 /*# sourceMappingURL=port.css.map */
